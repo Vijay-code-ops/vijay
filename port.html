@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+
+    <nav id="desk-nav">
+        <img src="download.jpg" class="logo" height="60px" width="60px" alt="Logo">
+        <div>
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+         <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="togglemenu()">About</a></li>
+                    <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="prof">
+        <div class="profpic-cont">
+            <img src="vijju.jpg" alt="profile" class="profile-pic">
+        </div>
+        <div class="sec-text">
+            <p class="text-p1">Hey!, I'm</p>
+            <h1 class="title">Vijay Prasanth</h1>
+            <p class="text-p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.location.href='vijay resume (2).pdf'">Click for CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact me!</button>
+            </div>
+            <div id="socials-container">
+                <img src="linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/vijayprasanthpydikondala'">
+                <img src="github.png" alt="github" class="icon" onclick="location.href='https://github.com/Vijay-code-ops'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <p class="abtxt">Get to know more</p>
+        <h1 class="title-text">About me</h1>
+        <div class="section-container">
+            <div class="pic-container">
+                <img src="vijju1.jpg" alt="about icon" class="about-icon">
+            </div>
+            <div class="about-detail-cont">
+                <div class="about-container">
+                    <div class="detail-cont">
+                        <h3>Education</h3>
+                        <p>Pursuing B.Tech Bachelors Degree<br></p>
+                    </div>
+                </div>
+                <br>
+                <div class="about-text">
+                    <p> Exploring the infinite possibilities of the web! As a Information Technology student at Sri Manakula Vinayagar Engineering College, 
+                        I'm on a journey to master the art of web development. Early on, I was drawn to the ever-evolving...<br>
+                        Having spent countless hours coding, I've nurtured a robust foundation in HTML, CSS, and JavaScript. This trio of web technologies is my playground,
+                        where I bring creative visions to life. From simple web pages to complex interactive experiences,
+                        I adore the challenge of turning concept into reality.</p>
+                </div>
+            </div>        
+        </div>
+        <img src="arrow.png" alt="arrow" class="arrow" onclick="location.href='#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="html-5.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="css-3.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="javascript.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="mysql.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="java.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="hotel.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Vijay-code-ops/hotel-management-system'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.linkedin.com/posts/vijayprasanthsmvec_hotelmanagement-webdevelopment-frontend-activity-7227355106717921280-yP8n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEee4BYBsuuNfN_JA-haoNWZY0j7PTPA1rM'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#contact'"
+        />
+      </section>
+
+    <section id="contact">
+        <p class="abtxt">Get in touch</p>
+        <h1 class="title-text"> Contact me</h1>
+        <div class="contact-info-cont">
+            <div class="icon-cont">
+                <img src="gmail.png" alt="email" class="icon contact-icon"/>
+                <p><a href="mailto:vijayprasanth110@gmail.com">vijayprasanth110@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linkedin.png" alt="linkedin" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/vijayprasanthpydikondala">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+  
+</body>
+</html>
